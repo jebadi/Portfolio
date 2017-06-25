@@ -134,6 +134,8 @@ iframe {
 	border: 0px solid black;
 	margin: 0 auto;
 	position: relative;
+	right: 6px;
+	top: 18px;
 }
 
 
@@ -173,6 +175,7 @@ iframe {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  top: 5px;
 }
 
 .active, .dot:hover {
@@ -221,10 +224,12 @@ iframe {
 	 width: 50%; 
 	 height: 50vh;
 	 float: right;
+background: -webkit-linear-gradient(left, rgba(241,196,15,1) 0%, rgba(241,196,15,0.53) 47%, rgba(241,196,15,0.29) 71%, rgba(241,196,15,0) 100%);
+	 overflow: hidden;
 }
 
 .vtwo {
-	bottom: 300px;
+	bottom: 260px;
 	position: relative;
 }
 
@@ -232,6 +237,7 @@ iframe {
 	 width: 50%; 
 	 height: 50vh;
 	 float: left;
+	 background: -webkit-linear-gradient(right, rgba(46,204,112,1) 0%, rgba(46,204,112,0.53) 47%, rgba(46,204,112,0.29) 71%, rgba(46,204,112,0) 100%);
 }
 
 
