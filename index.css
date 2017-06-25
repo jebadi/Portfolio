@@ -37,26 +37,35 @@ body {
 .logo {
 	float: left;
 	margin-top: 15px;
-	margin-left: 10px;
+	margin-left: 40px;
 }
 
-nav {
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
 	float: right;
-	margin-top: 30px;
-	margin-right: 90px;
 }
 
-.navbar {
-	color: #7f8c8d;
+a {
+	display: block;
+	padding-top: 35px;
+	padding-right: 90px;
+    color: #7f8c8d;
+    text-decoration: none;
 	font-family: 'Berlin Sans FB', sans-serif;
 	font-size: 20px;
-	margin-top: 10px;
-	margin-left: 70px;
-	text-decoration: none;
 }
 
-.navbar:hover {
-		text-decoration: underline #2ecc71;
+li a:hover {
+    text-decoration: underline #2ecc71;
+}
+
+.active {
+    background-color: #2ecc71;
 }
 
 span {
@@ -71,7 +80,7 @@ span {
 	display: block;
 	position: relative;
 	padding-top: 290px;
-	padding-left: 350px;
+	padding-left: 300px;
 }
 }
 
@@ -103,16 +112,115 @@ span {
 	border: none;
 	position: absolute;
 	bottom: 0;
+	padding-left: 1635px;
+	padding-bottom: 29px;
+}
+
+iframe {
+	padding-left: 650px;
+	padding-top: 80px;
+	border: none;	
+}
+
+/*HEADER SECTION allwork*/
+
+.full {
+	padding: 135px
+}
+
+.container {
+	width: 1200px;
+	height: 628px;
+	border: 0px solid black;
+	margin: 0 auto;
+	position: relative;
 }
 
 
+.slides {
+    display: none;
+}
 
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
 
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
+.prev:hover, .next:hover {
+  background-color: rgba(255,255,255, 0.8);
+}
 
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
 
+.active, .dot:hover {
+  background-color: #717171;
+}
 
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
 
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
 
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
 
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
 
+/*HEADER SECTION second page of allwork*/
+#second {
+	width: 100%;
+	height: 100vh;
+	background-image: url(images/second.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover; 
+	position: relative;
+	padding-bottom; 5px;
+}
+
+.vone {
+	bottom: 800px;
+	position: relative;
+	
+}
+
+.vone > video {
+	 width: 50%; 
+	 height: 50vh;
+	 float: right;
+}
+	
