@@ -55,14 +55,14 @@
 	
 	<div class="vone">
 		<video onclick="myFunction()" id="ply" autoplay loop>
-			<source src="piggy.mp4" type="video/mp4">
+			<source src="piggy 1.mp4" type="video/mp4">
 		Your browser does not support the video tag.
 		</video>
 	</div>
 	
 	<div class="vtwo">
-		<video width="920" height="640" autoplay="autoplay">
-			<source src="new landing.mp4" type="video/mp4">
+		<video onclick="Function()" id="ly" autoplay loop>
+			<source src="new landing fixed.mp4" type="video/mp4">
 		Your browser does not support the video tag.
 		</video>
 	</div>
@@ -73,6 +73,11 @@
 <script src="jquery.js"></script>
 <script>
 function myFunction() {
+    document.getElementById("ly").controls = true;
+}
+</script>
+<script>
+function Function() {
     document.getElementById("ply").controls = true;
 }
 </script>

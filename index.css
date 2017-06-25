@@ -209,7 +209,6 @@ iframe {
 	background-repeat: no-repeat;
 	background-size: cover; 
 	position: relative;
-	padding-bottom; 5px;
 }
 
 .vone {
@@ -223,4 +222,18 @@ iframe {
 	 height: 50vh;
 	 float: right;
 }
+
+.vtwo {
+	bottom: 300px;
+	position: relative;
+}
+
+.vtwo > video {
+	 width: 50%; 
+	 height: 50vh;
+	 float: left;
+}
+
+
+
 	
