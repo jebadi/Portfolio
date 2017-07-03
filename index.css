@@ -1,245 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=Lato" rel="stylesheet");
+
 body {
-	margin: 0px;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
 }
 
-
-.main {
+.intro {
 	height: 100vh;
 	width: 100%;
-	background-image: url(images/landing.jpg);
+	background: url(https://s3.amazonaws.com/aws-website-jebadicom-qy2sr/images/landing-screen.png);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover; 
 	position: relative;
-	
+	z-index: -6;
 }
 
-@media screen and (min-width:320px) {
-	background-image: url(images/landing.jpg);
-	position: relative;
+.intro #inner {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
-
-@media screen and (min-width:1000px) {
-	#container {
-	height: 100%;
-	width: 100%;
+.content {
+	max-width: 600px;
 	margin: 0 auto;
-	padding: 0;
-	}
+	text-align: center;
+	padding-bottom: 28%;
+}
+header {
+	margin: 0 auto;
 }
 
-.header {
-	margin-top: 0px;
-	width: 100%;
+#header-inner {
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
-.logo {
+#logo {
 	float: left;
 	margin-top: 15px;
 	margin-left: 40px;
-}
-
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-li {
-	float: right;
-}
-
-a {
-	display: block;
-	padding-top: 35px;
-	padding-right: 90px;
-    color: #7f8c8d;
-    text-decoration: none;
-	font-family: 'Berlin Sans FB', sans-serif;
-	font-size: 20px;
-}
-
-li a:hover {
-    text-decoration: underline #2ecc71;
-}
-
-.active {
-    background-color: #2ecc71;
-}
-
-span {
-	width: 100%;	
+	height: 100%;
 }
 
 
-@media screen and (min-width:1000px) {
-.desk {
+
+/*---End Navigation--*/
+.one-third {
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+#con {
+	background-color: #FFFFFF;
+}
+
+#se  {
+	background-color: #f1c40f;
+}
+
+#wal  {
+	background-color: #ecf0f1;
+}
+
+#ph  {
+	background-color: #1abc9c;
+}
+
+#blu  {
+	background-color: #3498db;
+}
+
+#re  {
+	background-color: #e74c3c;
+}
+
+#ovr  {
+	background-color: #ecf0f1;
+}
+
+#cars  {
+	background-color: #FAFDFF;
+}
+
+#pig  {
+	background-color: #FAFDFF;
+}
+
+#sv  {
+	background-color: #FFFFFF;
+}
+
+#final  {
+	background-color: #ecf0f1;
+}
+
+.one-third i {
+	padding: 15% 0 0 0;
+}
+
+aside {
 	float: center;
-	margin: auto;
-	display: block;
-	position: relative;
-	padding-top: 290px;
-	padding-left: 300px;
-}
-}
-
-/*HEADER SECTION*/
-#head {
-	width: 100%;
-	height: 100vh;
-	background-image: url(images/workS.png);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover; 
-	position: relative;
-}
-
-#ucla {
-	width: 100%;
-	height: 100vh;
-	background-image: url(images/respage.png);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover; 
-	position: relative;
-}
-
-.linkedin {
-	overflow: auto;
-	padding: 0;
-	margin: 0;
-	border: none;
-	position: absolute;
-	bottom: 0;
-	padding-left: 1635px;
-	padding-bottom: 29px;
-}
-
-iframe {
-	padding-left: 650px;
-	padding-top: 80px;
-	border: none;	
-}
-
-/*HEADER SECTION allwork*/
-
-.full {
-	padding: 135px
-}
-
-.container {
-	width: 1200px;
-	height: 628px;
-	border: 0px solid black;
 	margin: 0 auto;
-	position: relative;
-	right: 6px;
-	top: 18px;
+	width: 50%;
+	height: auto;
 }
-
-
-.slides {
-    display: none;
+.one-third-3 {
+	float: left;
+	width: 50%;
+	text-align: left;
 }
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: black;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+.one-third-3 i {
+	padding: 0 0 0 0;
 }
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+#centre {
+	float: left;
+	margin: 0 auto;
+	width: 50%;
+	height: auto;
 }
-
-.prev:hover, .next:hover {
-  background-color: rgba(255,255,255, 0.8);
-}
-
-.dot {
-  cursor:pointer;
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  top: 5px;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-
-/*HEADER SECTION second page of allwork*/
-#second {
+.one-third-4 {
 	width: 100%;
-	height: 100vh;
-	background-image: url(images/second.png);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover; 
-	position: relative;
+	text-align: left;
+	float: left;
+}
+.one-third-4 i {
+	padding: 0 0 0 0;
 }
 
-.vone {
-	bottom: 800px;
-	position: relative;
+#kr img{ 
+	padding:0; 
+	margin:0; 
+	display:block; 
+}
+
+/*---Modal image---*/
+
+
+/*---Media Queries---*/
+@media screen and (max-width: 900px) {
 	
 }
 
-.vone > video {
-	 width: 50%; 
-	 height: 50vh;
-	 float: right;
-background: -webkit-linear-gradient(left, rgba(241,196,15,1) 0%, rgba(241,196,15,0.53) 47%, rgba(241,196,15,0.29) 71%, rgba(241,196,15,0) 100%);
-	 overflow: hidden;
+@media screen and (max-width: 768px) {
+
 }
 
-.vtwo {
-	bottom: 260px;
-	position: relative;
-}
-
-.vtwo > video {
-	 width: 50%; 
-	 height: 50vh;
-	 float: left;
-	 background: -webkit-linear-gradient(right, rgba(46,204,112,1) 0%, rgba(46,204,112,0.53) 47%, rgba(46,204,112,0.29) 71%, rgba(46,204,112,0) 100%);
-}
-
-
-
+@media screen and (max-width: 480px) {
 	
+}
+
+
+
+
+
+
+
